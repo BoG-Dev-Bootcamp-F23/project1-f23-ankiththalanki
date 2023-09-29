@@ -43,7 +43,7 @@ function betterMod(a,b) {
 
 //Created an ASYNC function to fetch data
 async function fetchData() {
-    const URL = `https://pokeapi.co/api/v2/pokemon/${betterMod(current_pokemon,1018) + 1}/`;
+    const URL = `https://pokeapi.co/api/v2/pokemon/${betterMod(current_pokemon,1017) + 1}/`;
     const response = await fetch(URL);
     const data = await response.json();
     return data;
