@@ -113,7 +113,7 @@ function switchContent(content_type) {
         info_content.innerHTML +=(stat.stat.name + ": "+ stat.base_stat.toString() + "<br>" );
     });
     //Sets content to either info or move content
-    switchContent("info");
+    switchContent(current_info);
 }
 async function main() {
 
