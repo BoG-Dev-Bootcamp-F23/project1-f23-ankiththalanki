@@ -50,6 +50,7 @@ async function fetchData() {
 }
 
 //HTML Elements that are often used
+const content_title = document.getElementById("content-name");
 const image = document.getElementById("pokemon-img");
 const pokemon_name = document.getElementById("name");
 const types_container = document.getElementById("inner-types-container");
@@ -68,10 +69,12 @@ function switchContent(content_type) {
         content.innerHTML = "";
         content.appendChild(moves_content);
         current_info = "moves";
+        content_title.innerText = "Moves";
     }else if (content_type === "info") {
         content.innerHTML = "";
         content.appendChild(info_content);
         current_info = "info";
+        content_title.innerText = "Info";
     }
 }
 
