@@ -26,7 +26,7 @@ let text_to_hex = {
     steel: '#B7B7CE',
     fairy: '#D685AD'
 };
-let current_pokemon = 500;
+let current_pokemon = 0;
 //Below var can equal either moves or info
 let current_info = "info";
 //Ensures that if you go left it will wrap around
@@ -43,7 +43,7 @@ function betterMod(a,b) {
 
 //Created an ASYNC function to fetch data
 async function fetchData() {
-    const URL = `https://pokeapi.co/api/v2/pokemon/${betterMod(current_pokemon,1018)}/`;
+    const URL = `https://pokeapi.co/api/v2/pokemon/${betterMod(current_pokemon,1018) + 1}/`;
     const response = await fetch(URL);
     const data = await response.json();
     return data;
