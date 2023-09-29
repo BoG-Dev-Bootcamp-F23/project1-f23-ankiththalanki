@@ -11,13 +11,14 @@
 
         <div class="maincontent">
             <div class="leftcontent">
-                <img id="img" alt="Pokemon"src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"/>
-                <h4 id="name">bulbasaur</h4>
+                <img id="pokemon-img" alt="Pikachu"src="pokemon_placeholder.png"/>
+                <h4 id="name">pikachu</h4>
                 <div id="types-container">
                     <h5>Types:</h5>
                     <div id="inner-types-container">
                     <div class="type">grass</div>
-                    <div class="type">poison</div>
+                    
+
                     
                     
                     </div>
@@ -31,14 +32,16 @@
             
             <div class="rightcontent">
                 <h2>Info</h2>
-                <div class="content">
+                <div class="content" id="content">
+                    <span>
                     height: .3 <br>
                     weight: .4kg <br>
-                    hp: 48
+                    hp: 48 <br>
+                    </span>
                 </div>
                 <div class="buttons">
-                    <button id="info">Info</button>
-                    <button id="moves">Moves</button>
+                    <button class="info" id="selected-button">Info</button>
+                    <button class="moves">Moves</button>
                 </div>
             </div>
                 
@@ -47,5 +50,4 @@
 
         <script type="text/javascript" src="pokemon.js"></script>
     </body>
-    
 </html> 

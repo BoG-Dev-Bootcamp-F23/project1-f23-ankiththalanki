@@ -70,6 +70,8 @@ img {
     display: flex;
     justify-content: space-evenly;
     width: 400px;
+    position: fixed;
+    bottom: 30px;
     
 }
 .buttons button {
@@ -94,10 +96,10 @@ img {
     vertical-align: middle;
 }
 
-#info {
+#selected-button {
     background-color: #7CFF79;
 }
-#info:hover {
+#selected-button:hover {
     background-color: #59b757;
     transition: background-color ease 250ms;
 }
