@@ -26,7 +26,7 @@ let text_to_hex = {
     steel: '#B7B7CE',
     fairy: '#D685AD'
 };
-let current_pokemon = 0;
+let current_pokemon = 300;
 //Below var can equal either moves or info
 let current_info = "info";
 //Ensures that if you go left it will wrap around
