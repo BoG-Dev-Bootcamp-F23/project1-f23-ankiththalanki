@@ -109,8 +109,8 @@ function switchContent(content_type) {
         moves_content.innerHTML += (data.moves[i].move.name + "<br>");
     }
     //Clear prior Info content and give height
-    info_content.innerHTML = "height: " + (data.height * .1).toString() + "m <br>";
-    info_content.innerHTML += "weight: " + (data.weight * .1).toString() + "kg <br>";
+    info_content.innerHTML = "height: " + (Math.round(data.height * 10 + Number.EPSILON) / 100).toString() + "m <br>";
+    info_content.innerHTML += "weight: " + (Math.round(data.weight * 10 + Number.EPSILON) / 100).toString() + "kg <br>";
     const stats = data.stats;
     stats.forEach((stat) => {
         info_content.innerHTML +=(stat.stat.name + ": "+ stat.base_stat.toString() + "<br>" );
