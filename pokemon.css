@@ -70,8 +70,8 @@ img {
     display: flex;
     justify-content: space-evenly;
     width: 400px;
-    position: fixed;
-    bottom: 30px;
+    
+    
     
 }
 .buttons button {
