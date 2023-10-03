@@ -105,9 +105,11 @@ function switchContent(content_type) {
     moves_content.innerHTML = '';
     //Update Moves with first 10 moves, or however many there are
     const moves = data.moves;
-    for (let i = 0; i < Math.min(data.moves.length,14); i++) {
+    for (let i = 0; i < data.moves.length; i++) {
         moves_content.innerHTML += (data.moves[i].move.name + "<br>");
     }
+    //Add css property to moves_content to make it vertically scrollable
+    moves_content.style.overflowY = "auto";
     //Clear prior Info content and give height
     info_content.innerHTML = "height: " + (Math.round(data.height * 10 + Number.EPSILON) / 100).toString() + "m <br>";
     info_content.innerHTML += "weight: " + (Math.round(data.weight * 10 + Number.EPSILON) / 100).toString() + "kg <br>";
